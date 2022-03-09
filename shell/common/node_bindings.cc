@@ -255,7 +255,8 @@ void SetNodeOptions(base::Environment* env) {
 
   // Subset of options allowed in packaged apps
   const std::set<std::string> allowed_in_packaged = {"--max-http-header-size",
-                                                     "--http-parser"};
+                                                     "--http-parser",
+                                                     "--loader"};
 
   if (env->HasVar("NODE_OPTIONS")) {
     if (electron::fuses::IsNodeOptionsEnabled()) {
